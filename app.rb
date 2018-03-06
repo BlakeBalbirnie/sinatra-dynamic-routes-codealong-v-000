@@ -14,5 +14,10 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
+  get '/multiply/:num1/:num2' do
+    @multiply = params[:num1].to_i * params[:num2].to_i
+    "#{@multiply
+    }"
+  end
 
 end
